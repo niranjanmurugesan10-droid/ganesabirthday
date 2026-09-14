@@ -1227,3 +1227,819 @@ button { font: inherit; }
     gap: 12px;
   }
 }
+/* =========================================================
+   MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* ---------- GLOBAL ---------- */
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .app {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* =====================================================
+     PAGE 1 - KOZHUKATTAI SCREEN
+     ===================================================== */
+
+  .welcome {
+    min-height: 100svh;
+    height: 100svh;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .top-brand {
+    top: 18px;
+    left: 20px;
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+  .top-brand span {
+    font-size: 7px;
+    letter-spacing: 3px;
+  }
+
+  .intro {
+    top: 16%;
+    left: 20px;
+    right: 20px;
+    width: auto;
+    text-align: center;
+  }
+
+  .intro .small {
+    font-size: 8px;
+    letter-spacing: 3px;
+  }
+
+  .intro h1 {
+    font-size: clamp(38px, 11vw, 58px);
+    line-height: 0.95;
+    margin: 12px 0;
+  }
+
+  .intro p {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  /* Modak area */
+
+  .modak-field {
+    width: 100%;
+    height: 55%;
+    top: 25%;
+    left: 0;
+  }
+
+  .modak-btn {
+    transform: translate(-50%, -50%) scale(0.72);
+  }
+
+  .modak-btn:hover {
+    transform: translate(-50%, -50%) scale(0.78);
+  }
+
+  .start-btn {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 50px);
+    max-width: 320px;
+    min-height: 52px;
+    font-size: 13px;
+    padding: 10px 18px;
+  }
+
+  .start-btn b {
+    font-size: 22px;
+  }
+
+  .eating-text {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+  }
+
+  .eating-text span {
+    font-size: 11px;
+  }
+
+  .eating-text strong {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Rats */
+
+  .rat {
+    width: 75px;
+  }
+
+  .rat-wrap {
+    transform: scale(0.65);
+  }
+
+
+  /* =====================================================
+     PAGE 2 - FESTIVAL WEBSITE
+     ===================================================== */
+
+  .festival-site {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* =====================================================
+     NAVBAR
+     ===================================================== */
+
+  .festival-nav {
+    position: relative;
+    width: 100%;
+    min-height: 75px;
+
+    padding: 15px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 13px;
+  }
+
+  .nav-logo {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+
+  .nav-logo span {
+    display: block;
+    font-size: 7px;
+    letter-spacing: 3px;
+    margin-top: 3px;
+  }
+
+  .nav-links {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    white-space: nowrap;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+  }
+
+
+  /* =====================================================
+     HERO
+     ===================================================== */
+
+  .festival-hero {
+    min-height: auto;
+    height: auto;
+
+    padding: 55px 22px 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 500px;
+    z-index: 5;
+  }
+
+  .hero-small {
+    font-size: 8px;
+    letter-spacing: 3px;
+    margin-bottom: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(42px, 13vw, 68px);
+    line-height: 0.95;
+
+    margin: 0;
+  }
+
+  .hero-text h1 strong {
+    font-size: clamp(42px, 13vw, 68px);
+  }
+
+  .hero-text p {
+    font-size: 13px;
+    line-height: 1.8;
+
+    margin: 22px 0;
+  }
+
+  .explore-btn {
+    min-height: 48px;
+    padding: 12px 22px;
+
+    font-size: 11px;
+  }
+
+
+  /* =====================================================
+     VINAYAGAR PNG
+     ===================================================== */
+
+  .hero-vinayagar {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 25px;
+
+    position: relative;
+  }
+
+  .hero-vinayagar .vinayagar {
+    width: min(78vw, 350px);
+    height: auto;
+
+    max-width: 100%;
+
+    object-fit: contain;
+
+    display: block;
+  }
+
+
+  /* =====================================================
+     BLESSING STRIP
+     ===================================================== */
+
+  .blessing-strip {
+    width: 100%;
+
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 0;
+
+    padding: 0;
+  }
+
+  .blessing-strip > div {
+    min-height: 75px;
+
+    padding: 14px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .blessing-strip > div span {
+    font-size: 9px;
+    margin-bottom: 5px;
+  }
+
+
+  /* =====================================================
+     SECTION COMMON
+     ===================================================== */
+
+  .content-section,
+  .services-section {
+    width: 100%;
+
+    padding: 70px 20px;
+  }
+
+  .section-heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-heading > span {
+    font-size: 8px;
+    letter-spacing: 3px;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(35px, 10vw, 52px);
+    line-height: 1;
+    margin: 12px 0;
+  }
+
+  .section-heading h2 strong {
+    display: block;
+  }
+
+  .section-heading p {
+    max-width: 340px;
+    margin: 0 auto;
+
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+
+  /* =====================================================
+     WISH CARDS
+     ===================================================== */
+
+  .wish-grid {
+    width: 100%;
+
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+
+    gap: 16px;
+
+    margin-top: 35px;
+  }
+
+  .wish-card-item {
+    width: 100%;
+
+    min-height: 210px;
+
+    padding: 25px 22px;
+  }
+
+  .card-number {
+    font-size: 10px;
+  }
+
+  .card-symbol {
+    font-size: 22px;
+  }
+
+  .wish-card-item h3 {
+    font-size: 21px;
+    margin: 18px 0 10px;
+  }
+
+  .wish-card-item p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+
+  /* =====================================================
+     FESTIVAL VIBES
+     ===================================================== */
+
+  .vibes-section {
+    width: 100%;
+    padding: 70px 20px;
+  }
+
+  .vibes-title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .vibes-title > span {
+    font-size: 8px;
+    letter-spacing: 3px;
+  }
+
+  .vibes-title h2 {
+    font-size: 38px;
+    line-height: 1.05;
+  }
+
+  .vibes-title h2 strong {
+    display: block;
+  }
+
+  .rising-cards {
+    width: 100%;
+
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+
+    gap: 16px;
+
+    margin-top: 35px;
+  }
+
+  .rising-card {
+    width: 100% !important;
+
+    min-height: 220px;
+
+    padding: 28px 23px;
+
+    transform: none !important;
+  }
+
+  .rising-card small {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+
+  .rising-card h3 {
+    font-size: 25px;
+    margin: 15px 0 10px;
+  }
+
+  .rising-card p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+
+  /* =====================================================
+     ABOUT SECTION
+     ===================================================== */
+
+  .about-section {
+    width: 100%;
+
+    padding: 70px 20px;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center;
+
+    gap: 45px;
+  }
+
+  .about-visual {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-circle {
+    width: min(75vw, 320px);
+    height: min(75vw, 320px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-circle .vinayagar {
+    width: 85%;
+    height: auto;
+
+    max-width: 100%;
+
+    object-fit: contain;
+  }
+
+  .about-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-content > span {
+    font-size: 8px;
+    letter-spacing: 3px;
+  }
+
+  .about-content h2 {
+    font-size: 48px;
+    line-height: 0.95;
+
+    margin: 15px 0 22px;
+  }
+
+  .about-content p {
+    font-size: 12px;
+    line-height: 1.9;
+
+    margin: 0 auto 15px;
+
+    max-width: 350px;
+  }
+
+  .about-sign {
+    margin-top: 28px;
+
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+
+  .about-sign strong {
+    display: block;
+
+    font-size: 13px;
+    margin-top: 6px;
+  }
+
+
+  /* =====================================================
+     SERVICES
+     ===================================================== */
+
+  .service-grid {
+    width: 100%;
+
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+
+    gap: 15px;
+
+    margin-top: 35px;
+  }
+
+  .service-card {
+    width: 100%;
+
+    min-height: 200px;
+
+    padding: 25px 22px;
+  }
+
+  .service-card > span {
+    font-size: 10px;
+  }
+
+  .service-card h3 {
+    font-size: 22px;
+
+    margin: 18px 0 10px;
+  }
+
+  .service-card p {
+    font-size: 12px;
+    line-height: 1.8;
+
+    max-width: 320px;
+  }
+
+  .service-arrow {
+    font-size: 20px;
+  }
+
+
+  /* =====================================================
+     FINAL CTA
+     ===================================================== */
+
+  .final-section {
+    width: 100%;
+
+    min-height: 600px;
+
+    padding: 80px 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  .final-content {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .final-content > span {
+    font-size: 8px;
+    letter-spacing: 3px;
+  }
+
+  .final-content h2 {
+    font-size: clamp(42px, 12vw, 62px);
+    line-height: 0.95;
+
+    margin: 18px 0 25px;
+  }
+
+  .final-content p {
+    font-size: 12px;
+    line-height: 1.9;
+
+    max-width: 340px;
+
+    margin: 0 auto 30px;
+  }
+
+  .contact-btn {
+    display: inline-flex;
+
+    min-height: 48px;
+
+    padding: 13px 25px;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+
+  /* =====================================================
+     FOOTER
+     ===================================================== */
+
+  .site-footer {
+    width: 100%;
+
+    padding: 50px 20px 25px;
+
+    text-align: center;
+  }
+
+  .footer-brand {
+    font-size: 23px;
+    letter-spacing: 4px;
+  }
+
+  .footer-brand span {
+    display: block;
+
+    font-size: 7px;
+    letter-spacing: 3px;
+
+    margin-top: 4px;
+  }
+
+  .site-footer > p {
+    max-width: 300px;
+
+    margin: 18px auto;
+
+    font-size: 11px;
+    line-height: 1.7;
+  }
+
+  .footer-contact {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 10px;
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    font-size: 9px;
+  }
+
+
+  /* =====================================================
+     SMALL PHONES - 480px
+     ===================================================== */
+
+  @media (max-width: 480px) {
+
+    .festival-nav {
+      padding: 13px 12px;
+    }
+
+    .nav-links {
+      gap: 13px;
+    }
+
+    .nav-links a {
+      font-size: 9px;
+    }
+
+    .festival-hero {
+      padding: 45px 18px 25px;
+    }
+
+    .hero-text h1,
+    .hero-text h1 strong {
+      font-size: 43px;
+    }
+
+    .hero-text p {
+      font-size: 11px;
+    }
+
+    .hero-vinayagar .vinayagar {
+      width: 82vw;
+    }
+
+    .blessing-strip > div {
+      min-height: 70px;
+      font-size: 10px;
+    }
+
+    .content-section,
+    .services-section,
+    .vibes-section,
+    .about-section {
+      padding: 60px 17px;
+    }
+
+    .section-heading h2 {
+      font-size: 38px;
+    }
+
+    .wish-card-item {
+      min-height: 200px;
+      padding: 22px 19px;
+    }
+
+    .wish-card-item h3 {
+      font-size: 19px;
+    }
+
+    .rising-card {
+      min-height: 205px;
+      padding: 23px 19px;
+    }
+
+    .about-circle {
+      width: 75vw;
+      height: 75vw;
+    }
+
+    .about-content h2 {
+      font-size: 43px;
+    }
+
+    .service-card {
+      min-height: 185px;
+      padding: 22px 19px;
+    }
+
+    .service-card h3 {
+      font-size: 20px;
+    }
+
+    .final-section {
+      min-height: 550px;
+      padding: 70px 18px;
+    }
+
+    .final-content h2 {
+      font-size: 44px;
+    }
+
+  }
+}
